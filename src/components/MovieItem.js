@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 function MovieItem(props) {
   return (
     <div style={{ width: "25%", padding: 10, boxSizing: "border-box" }}>
-      <Link to={`/discover/${props.imdbID}`}></Link>
-      <h1>{props.title}</h1>
+      <Link to={`/discover/${props.imdbID}`}>
+        <h1>{props.title}</h1>
+      </Link>
       <h2>{props.year}</h2>
       <h3>{props.imdbID}</h3>
       <div>
