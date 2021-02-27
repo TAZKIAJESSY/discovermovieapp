@@ -47,7 +47,7 @@ function DiscoverMoviePage() {
                   key={index}
                   title={m.Title}
                   year={m.Year}
-                  imbd_id={m.imdbID}
+                  imdbID={m.imdbID}
                   poster={m.Poster}
                 />
               );
