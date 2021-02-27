@@ -2,7 +2,16 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div style={{}}>
+    <div
+      style={{
+        margin: 20,
+        fontSize: 25,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "center",
+      }}
+    >
       <NavLink activeStyle={{ fontweight: "bold" }} exact to="/">
         Home
       </NavLink>
