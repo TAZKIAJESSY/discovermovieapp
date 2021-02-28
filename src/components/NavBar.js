@@ -12,13 +12,25 @@ function NavBar() {
         alignItems: "center",
       }}
     >
-      <NavLink activeStyle={{ fontweight: "bold" }} exact to="/">
+      <NavLink
+        activeStyle={{ fontweight: "bold", color: "greenyellow" }}
+        exact
+        to="/"
+      >
         Home
       </NavLink>
-      <NavLink activeStyle={{ fontweight: "bold" }} exact to="/about">
+      <NavLink
+        activeStyle={{ fontweight: "bold", color: "teal" }}
+        exact
+        to="/about"
+      >
         About Us
       </NavLink>
-      <NavLink activeStyle={{ fontweight: "bold" }} exact to="/discover">
+      <NavLink
+        activeStyle={{ fontweight: "bold", color: "tomato" }}
+        exact
+        to="/discover"
+      >
         Discover Movie Page
       </NavLink>
     </div>
