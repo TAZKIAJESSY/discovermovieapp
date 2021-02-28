@@ -12,8 +12,12 @@ function App() {
       <NavBar />
 
       <Switch>
-        <Route exact path="/discover/:imdb_id" component={MoviePage} />
-        <Route exact path="/discover" component={DiscoverMoviePage} />
+        <Route exact path="/movie/:imdb_id" component={MoviePage} />
+        <Route
+          exact
+          path="/discover/:searchinput?"
+          component={DiscoverMoviePage}
+        />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/" component={HomePage} />
       </Switch>
