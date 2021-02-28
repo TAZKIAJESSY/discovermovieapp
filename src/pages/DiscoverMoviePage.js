@@ -39,6 +39,7 @@ function DiscoverMoviePage() {
   useEffect(() => {
     async function fetchData() {
       if (!searchinput || searchinput === "") {
+        //if searchInput not defined or empty then set to idle just return this other than go check lower steps
         set_searchState("idle");
         return;
       }
